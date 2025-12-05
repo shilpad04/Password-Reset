@@ -16,7 +16,7 @@ export default function ForgotPassword() {
       await api.post("/api/auth/forgot-password", { email });
 
       setPopup({
-        message: "If this email exists, a reset link has been sent. Please wait for some time...",
+        message: "If this email exists, a reset link has been sent. It may take a few minutes to arrive.",
         type: "success",
       });
     } catch (e) {
